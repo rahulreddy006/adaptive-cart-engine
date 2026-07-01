@@ -1,0 +1,115 @@
+{
+  "v": 11,
+  "name": "Adaptive-Cart-Engine",
+  "folders": [],
+  "requests": [
+    {
+      "v": "17",
+      "endpoint": "http://localhost:5000/api/v1/cart/checkout",
+      "name": "Untitled",
+      "params": [],
+      "headers": [
+        {
+          "key": "x-user-id",
+          "value": "6a44de3ed2503b6d3813ed1b",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "method": "GET",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "17",
+      "endpoint": "http://localhost:5000/api/v1/users",
+      "name": "Untitled",
+      "params": [],
+      "headers": [],
+      "method": "POST",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n  \"name\": \"Rahul Reddy\",\n  \"email\": \"rahul@gmail.com\"\n}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "17",
+      "endpoint": "http://localhost:5000/api/v1/cart/items",
+      "name": "Untitled",
+      "params": [],
+      "headers": [
+        {
+          "key": "x-user-id",
+          "value": "6a44de3ed2503b6d3813ed1b",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "method": "POST",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n  \"productId\": \"P101\",\n  \"name\": \"monitor\",\n  \"price\": 30000,\n  \"quantity\": 1,\n  \"category\": \"Electronics\"\n}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "17",
+      "endpoint": "http://localhost:5000/api/v1/cart/items/P101",
+      "name": "Untitled",
+      "params": [],
+      "headers": [
+        {
+          "key": "x-user-id",
+          "value": "6a44de3ed2503b6d3813ed1b",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "method": "DELETE",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    }
+  ],
+  "headers": [],
+  "auth": {
+    "authType": "none",
+    "authActive": true
+  },
+  "variables": [],
+  "description": ""
+}
