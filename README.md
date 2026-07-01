@@ -52,6 +52,25 @@ src/
 ```
 
 ---
+# Architecture
+
+The project follows a layered architecture:
+
+```
+Client
+   │
+   ▼
+Routes
+   │
+   ▼
+Controllers
+   │
+   ▼
+Services
+   │
+   ▼
+Database (MongoDB)
+```
 
 # API Endpoints
 
